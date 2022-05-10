@@ -6,15 +6,16 @@ export default function App() {
     <View style={styles.container}>
       <View style={styles.header}>
         <View style={styles.bottoms}>
-          <Text>Menu</Text>
+          <Text style={styles.textBottom}>Menu</Text>
         </View>
         <View style={styles.bottoms}>
-          <Text>Logs</Text>
+          <Text style={styles.textBottom}>Logs</Text>
         </View>
         <View style={styles.bottoms}>
-          <Text>Credits</Text>
+          <Text style={styles.textBottom}>Credits</Text>
         </View>
       </View>
+
     </View>
   );
 }
@@ -29,12 +30,23 @@ const styles = StyleSheet.create({
   },
 
   header: {
-    backgroundColor: '#f2f2f2',
+    backgroundColor: '#d9d9d9',
     // width: '100%',
     display: 'flex',
     flexDirection: 'row',
     justifyContent: 'space-around',
+    marginTop: 30,
+    height: 72
   },
-  
+
+  textBottom: {
+    color: 'white',
+    fontSize: 24,
+    backgroundColor: 'black',
+    marginTop: 16,
+    borderRadius: 4,
+    padding: 4,
+  }
+
 
 });
