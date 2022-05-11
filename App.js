@@ -24,10 +24,42 @@ export default function App() {
           <View style={styles.child}></View>
           <View style={styles.child}></View>
         </View>
-      </View>
-      <View style={styles.content3}>
 
+        <View style={styles.content3}>
+          <View style={styles.child1}></View>
+          <View style={styles.child1}></View>
+          <View style={styles.child1}></View>
+        </View>
+
+        <View style={styles.content4}>
+          <View style={styles.view2}>
+            <View style={styles.child2}></View>
+            <View style={styles.child2}></View>
+            <View style={styles.child2}></View>
+            <View style={styles.child2}></View>
+            <View style={styles.child2}></View>
+          </View>
+          <View style={styles.view2}>
+            <View style={styles.child2}></View>
+            <View style={styles.child2}></View>
+            <View style={styles.child2}></View>
+            <View style={styles.child2}></View>
+            <View style={styles.child2}></View>
+          </View>
+          <View style={styles.view2}>
+            <View style={styles.child2}></View>
+            <View style={styles.child2}></View>
+            <View style={styles.child2}></View>
+            <View style={styles.child2}></View>
+            <View style={styles.child2}></View>
+          </View>
+        </View>
       </View>
+
+      <View style={styles.footer}>
+        <Text style={styles.textFooter}>Exercício 01 - DDM</Text>
+      </View>
+
     </View>
     </>
   );
@@ -75,7 +107,7 @@ const styles = StyleSheet.create({
     width: '80%',
     marginTop: 40,
     marginLeft: 38,
-    borderRadius: 16
+    borderRadius: 8,
   },
 
   contentChild: {
@@ -95,7 +127,68 @@ const styles = StyleSheet.create({
     width: '20%',
     height: '72%',
     marginTop: 16,
+  },
+
+  child1: {
+    backgroundColor: 'black',
+    width: '88%',
+    height: '24%',
+    marginTop: 10,
+    marginLeft: 16
+  },
+
+  child2: {
+    backgroundColor: 'black',
+    width: '16%',
+    height: '100%',
+    marginTop: 32,
+    marginLeft: 2
+  },
+
+  content3: {
+    display: 'flex',
+    backgroundColor: '#b3b3',
+    height: '24%',
+    width: '80%',
+    marginTop: 32,
+    marginLeft: 30,
+    borderRadius: 8,
+  },
+
+  content4: {
+    display: 'flex',
+    backgroundColor: '#b3b3',
+    height: '24%',
+    width: '80%',
+    marginTop: 32,
+    marginLeft: 30,
+    borderRadius: 8,
+  },
+
+  view2: {
+    display: 'flex',
+    flexDirection: 'row',
+    justifyContent: 'space-evenly',
+    alignItems: 'center',
+    marginBottom: 8
+  },
+
+  footer: {
+    width: '100%',
+    alignItems: 'center',
+    marginTop: 24,
+    height: 72,
+    backgroundColor: '#6666ff'
+  },
+
+  textFooter: {
+    fontSize: 24,
+    color: '#fff',
+    marginTop: 16
+    // finish
   }
+
+
 
 
 });
