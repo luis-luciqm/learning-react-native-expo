@@ -20,17 +20,13 @@ export default function App() {
     <View style={styles.content1}>
       <View style={styles.content2}>
         <View style={styles.contentChild}>
-          <View style={styles.child}>
-
-          </View>
-          <View style={styles.child}>
-
-          </View>
-          <View style={styles.child}>
-
-          </View>
+          <View style={styles.child}></View>
+          <View style={styles.child}></View>
+          <View style={styles.child}></View>
         </View>
-        
+      </View>
+      <View style={styles.content3}>
+
       </View>
     </View>
     </>
@@ -99,9 +95,6 @@ const styles = StyleSheet.create({
     width: '20%',
     height: '72%',
     marginTop: 16,
-    
-    
-
   }
 
 
