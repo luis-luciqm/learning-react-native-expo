@@ -3,6 +3,7 @@ import { StyleSheet, Text, View } from 'react-native';
 
 export default function App() {
   return (
+    <>
     <View style={styles.container}>
       <View style={styles.header}>
         <View style={styles.bottoms}>
@@ -15,14 +16,22 @@ export default function App() {
           <Text style={styles.textBottom}>Credits</Text>
         </View>
       </View>
-
     </View>
+    <View style={styles.content1}>
+      <View style={styles.content2}>
+        <View style={styles.contentChild}>
+
+        </View>
+        
+      </View>
+    </View>
+    </>
   );
 }
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
+    
     backgroundColor: '#fff',
     // alignItems: 'center',
     // justifyContent: 'center',
@@ -41,11 +50,37 @@ const styles = StyleSheet.create({
 
   textBottom: {
     color: 'white',
-    fontSize: 24,
+    fontSize: 16,
     backgroundColor: 'black',
     marginTop: 16,
     borderRadius: 4,
-    padding: 4,
+    padding: 8,
+    width: 82,
+    textAlign: 'center'
+  },
+
+  content1: {
+    backgroundColor: '#ccccff',
+    height: '100%'
+  },
+
+  content2: {
+    display: 'flex',
+    backgroundColor: '#b3b3ff',
+    height: '72%',
+    width: '80%',
+    marginTop: 40,
+    marginLeft: 38,
+    borderRadius: 16
+  },
+
+  contentChild: {
+    backgroundColor: '#b3b3',
+    height: '24%',
+    width: '80%',
+    marginTop: 32,
+    marginLeft: 30,
+    borderRadius: 16
   }
 
 
