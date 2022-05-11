@@ -20,7 +20,15 @@ export default function App() {
     <View style={styles.content1}>
       <View style={styles.content2}>
         <View style={styles.contentChild}>
+          <View style={styles.child}>
 
+          </View>
+          <View style={styles.child}>
+
+          </View>
+          <View style={styles.child}>
+
+          </View>
         </View>
         
       </View>
@@ -75,12 +83,25 @@ const styles = StyleSheet.create({
   },
 
   contentChild: {
+    display: 'flex',
     backgroundColor: '#b3b3',
     height: '24%',
     width: '80%',
     marginTop: 32,
     marginLeft: 30,
-    borderRadius: 16
+    borderRadius: 8,
+    justifyContent: 'space-around',
+    flexDirection: 'row'
+  },
+
+  child: {
+    backgroundColor: 'black',
+    width: '20%',
+    height: '72%',
+    marginTop: 16,
+    
+    
+
   }
 
 
